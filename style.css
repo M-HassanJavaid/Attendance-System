@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-image: url(media/bg.jpg);
+    background-size: cover;
+}
+
+#tableContainer{
+    max-height: 361.6px;
+    overflow-y: auto;
+    width: 100%;
+    min-width: 100%;
+}
+
+th , td{
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    border: 2px solid black
+}
+
+table{
+    border: 2px solid black;
+    width: 100%;
+    min-width: fit-content;
+    border-collapse: collapse;
+}
+
+.table-heading{
+    background-color: blue;
+    color: white;
+    width: 100%;
+    overflow: auto;
+}
+
+.table-data{
+    background-color: white;
+}
+
+main{
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.387);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+input{
+    font-size: 1rem;
+    padding: 5px;
+    flex-grow: 1;
+    background-color: white;
+}
+
+button{
+    font-size: 1rem;
+    padding: 5px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    max-width: 120px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 139, 0.483);
+}
+
+.input-sec{
+    display: flex;
+    gap: 20px;
+    padding-block: 20px ;
+}
+
+@media (max-width: 740px) {
+    
+    .input-sec{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button{
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    
+    main{
+        scale: 0.8;
+    }
+
+}
+@media (max-width: 356px) {
+    
+    main{
+        scale: 0.6;
+    }
+
+}
