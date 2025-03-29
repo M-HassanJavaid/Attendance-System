@@ -36,7 +36,12 @@ btn.addEventListener('click' , ()=>{
     let minutes = DateTime.getMinutes().toString().padStart(2 , '0');
     let Seconds = DateTime.getSeconds().toString().padStart(2 , '0');
     let AMorPM;
-    if (hours < 12 ) {
+    if (hours === 12 ) {
+        AMorPM = 'PM';
+    } else if (hours < 12) {
+        if (hours === 0) {
+            hours = 12;
+        }
         AMorPM = 'AM';
     } else {
         hours = hours - 12;
